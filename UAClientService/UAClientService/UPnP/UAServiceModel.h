@@ -10,4 +10,11 @@
 
 @interface UAServiceModel : NSObject
 
+@property (nonatomic, copy) NSString *serviceType;
+@property (nonatomic, copy) NSString *serviceId;
+@property (nonatomic, copy) NSString *controlURL;
+@property (nonatomic, copy) NSString *eventSubURL;
+@property (nonatomic, copy) NSString *SCPDURL;
+@property (nonatomic, strong) NSArray *serviceArray;
+
 @end

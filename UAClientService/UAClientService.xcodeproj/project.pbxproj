@@ -10,8 +10,6 @@
 		E2E78AD81F023C8F00D04B50 /* UAClientService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E78ACE1F023C8F00D04B50 /* UAClientService.framework */; };
 		E2E78ADD1F023C8F00D04B50 /* UAClientServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E78ADC1F023C8F00D04B50 /* UAClientServiceTests.m */; };
 		E2E78ADF1F023C8F00D04B50 /* UAClientService.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E78AD11F023C8F00D04B50 /* UAClientService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2E78AED1F024D3400D04B50 /* UAAirplayController.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E78AEB1F024D3400D04B50 /* UAAirplayController.h */; };
-		E2E78AEE1F024D3400D04B50 /* UAAirplayController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E78AEC1F024D3400D04B50 /* UAAirplayController.m */; };
 		E2E78AF11F024D7100D04B50 /* UAUPnPController.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E78AEF1F024D7100D04B50 /* UAUPnPController.h */; };
 		E2E78AF21F024D7100D04B50 /* UAUPnPController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E78AF01F024D7100D04B50 /* UAUPnPController.m */; };
 		E2E78AF61F024E5900D04B50 /* UAServiceModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E78AF41F024E5900D04B50 /* UAServiceModel.h */; };
@@ -23,6 +21,11 @@
 		E2E78B021F024F9700D04B50 /* GDataXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E78B001F024F9700D04B50 /* GDataXMLNode.h */; };
 		E2E78B031F024F9700D04B50 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E78B011F024F9700D04B50 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E2E78B051F024FE700D04B50 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E78B041F024FE700D04B50 /* libxml2.tbd */; };
+		E2E78B081F034D0800D04B50 /* UAControlDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E78B061F034D0800D04B50 /* UAControlDevice.h */; };
+		E2E78B091F034D0800D04B50 /* UAControlDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E78B071F034D0800D04B50 /* UAControlDevice.m */; };
+		E2E78B0C1F038CB500D04B50 /* UAControlManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E78B0A1F038CB500D04B50 /* UAControlManager.h */; };
+		E2E78B0D1F038CB500D04B50 /* UAControlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E78B0B1F038CB500D04B50 /* UAControlManager.m */; };
+		E2E78B111F039B2B00D04B50 /* UADefineHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E78B101F039B2B00D04B50 /* UADefineHeader.h */; };
 		E35C1FB19CB8FF8C46DF50DE /* libPods-UAClientService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0543A594D6F2B2695711E0E4 /* libPods-UAClientService.a */; };
 /* End PBXBuildFile section */
 
@@ -46,11 +49,8 @@
 		E2E78AD71F023C8F00D04B50 /* UAClientServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UAClientServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E78ADC1F023C8F00D04B50 /* UAClientServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UAClientServiceTests.m; sourceTree = "<group>"; };
 		E2E78ADE1F023C8F00D04B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2E78AEB1F024D3400D04B50 /* UAAirplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UAAirplayController.h; path = Airplay/UAAirplayController.h; sourceTree = "<group>"; };
-		E2E78AEC1F024D3400D04B50 /* UAAirplayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UAAirplayController.m; path = Airplay/UAAirplayController.m; sourceTree = "<group>"; };
 		E2E78AEF1F024D7100D04B50 /* UAUPnPController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UAUPnPController.h; path = UPnP/UAUPnPController.h; sourceTree = "<group>"; };
 		E2E78AF01F024D7100D04B50 /* UAUPnPController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UAUPnPController.m; path = UPnP/UAUPnPController.m; sourceTree = "<group>"; };
-		E2E78AF31F024E1300D04B50 /* UAUPnPHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UAUPnPHeader.h; path = UPnP/UAUPnPHeader.h; sourceTree = "<group>"; };
 		E2E78AF41F024E5900D04B50 /* UAServiceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UAServiceModel.h; path = UPnP/UAServiceModel.h; sourceTree = "<group>"; };
 		E2E78AF51F024E5900D04B50 /* UAServiceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UAServiceModel.m; path = UPnP/UAServiceModel.m; sourceTree = "<group>"; };
 		E2E78AF81F024E9A00D04B50 /* UAUPnPAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UAUPnPAction.h; path = UPnP/UAUPnPAction.h; sourceTree = "<group>"; };
@@ -60,6 +60,11 @@
 		E2E78B001F024F9700D04B50 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDataXMLNode.h; path = Vendor/GDataXMLNode.h; sourceTree = "<group>"; };
 		E2E78B011F024F9700D04B50 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDataXMLNode.m; path = Vendor/GDataXMLNode.m; sourceTree = "<group>"; };
 		E2E78B041F024FE700D04B50 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		E2E78B061F034D0800D04B50 /* UAControlDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAControlDevice.h; sourceTree = "<group>"; };
+		E2E78B071F034D0800D04B50 /* UAControlDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAControlDevice.m; sourceTree = "<group>"; };
+		E2E78B0A1F038CB500D04B50 /* UAControlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAControlManager.h; sourceTree = "<group>"; };
+		E2E78B0B1F038CB500D04B50 /* UAControlManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAControlManager.m; sourceTree = "<group>"; };
+		E2E78B101F039B2B00D04B50 /* UADefineHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UADefineHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,10 +129,14 @@
 		E2E78AD01F023C8F00D04B50 /* UAClientService */ = {
 			isa = PBXGroup;
 			children = (
-				E2E78AEA1F0248D300D04B50 /* Airplay */,
 				E2E78AE91F0248CB00D04B50 /* UPnP */,
 				E2E78AE81F0248C100D04B50 /* Vendor */,
 				E2E78AD11F023C8F00D04B50 /* UAClientService.h */,
+				E2E78B101F039B2B00D04B50 /* UADefineHeader.h */,
+				E2E78B061F034D0800D04B50 /* UAControlDevice.h */,
+				E2E78B071F034D0800D04B50 /* UAControlDevice.m */,
+				E2E78B0A1F038CB500D04B50 /* UAControlManager.h */,
+				E2E78B0B1F038CB500D04B50 /* UAControlManager.m */,
 				E2E78AD21F023C8F00D04B50 /* Info.plist */,
 			);
 			path = UAClientService;
@@ -154,7 +163,6 @@
 		E2E78AE91F0248CB00D04B50 /* UPnP */ = {
 			isa = PBXGroup;
 			children = (
-				E2E78AF31F024E1300D04B50 /* UAUPnPHeader.h */,
 				E2E78AF41F024E5900D04B50 /* UAServiceModel.h */,
 				E2E78AF51F024E5900D04B50 /* UAServiceModel.m */,
 				E2E78AF81F024E9A00D04B50 /* UAUPnPAction.h */,
@@ -165,15 +173,6 @@
 				E2E78AF01F024D7100D04B50 /* UAUPnPController.m */,
 			);
 			name = UPnP;
-			sourceTree = "<group>";
-		};
-		E2E78AEA1F0248D300D04B50 /* Airplay */ = {
-			isa = PBXGroup;
-			children = (
-				E2E78AEB1F024D3400D04B50 /* UAAirplayController.h */,
-				E2E78AEC1F024D3400D04B50 /* UAAirplayController.m */,
-			);
-			name = Airplay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,8 +187,10 @@
 				E2E78AF11F024D7100D04B50 /* UAUPnPController.h in Headers */,
 				E2E78AFE1F024EC500D04B50 /* UAUPnPInfoModel.h in Headers */,
 				E2E78B021F024F9700D04B50 /* GDataXMLNode.h in Headers */,
+				E2E78B111F039B2B00D04B50 /* UADefineHeader.h in Headers */,
 				E2E78AF61F024E5900D04B50 /* UAServiceModel.h in Headers */,
-				E2E78AED1F024D3400D04B50 /* UAAirplayController.h in Headers */,
+				E2E78B0C1F038CB500D04B50 /* UAControlManager.h in Headers */,
+				E2E78B081F034D0800D04B50 /* UAControlDevice.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,8 +333,9 @@
 				E2E78AF21F024D7100D04B50 /* UAUPnPController.m in Sources */,
 				E2E78AFF1F024EC500D04B50 /* UAUPnPInfoModel.m in Sources */,
 				E2E78AF71F024E5900D04B50 /* UAServiceModel.m in Sources */,
-				E2E78AEE1F024D3400D04B50 /* UAAirplayController.m in Sources */,
+				E2E78B091F034D0800D04B50 /* UAControlDevice.m in Sources */,
 				E2E78B031F024F9700D04B50 /* GDataXMLNode.m in Sources */,
+				E2E78B0D1F038CB500D04B50 /* UAControlManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
