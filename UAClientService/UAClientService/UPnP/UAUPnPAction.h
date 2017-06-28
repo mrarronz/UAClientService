@@ -8,11 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "UAControlDevice.h"
-
-typedef NS_ENUM(NSInteger, UAUPnPServiceType) {
-    UAUPnPServiceTypeAVTransport,
-    UAUPnPServiceTypeRenderControl
-};
+#import "UADefineHeader.h"
 
 @interface UAUPnPAction : NSObject
 

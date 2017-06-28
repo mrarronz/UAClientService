@@ -8,7 +8,6 @@
 
 #import "UAUPnPAction.h"
 #import "GDataXMLNode.h"
-#import "UADefineHeader.h"
 #import "UAUPnPInfoModel.h"
 #import "UAServiceModel.h"
 

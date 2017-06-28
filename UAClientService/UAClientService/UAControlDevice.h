@@ -6,6 +6,7 @@
 //  Copyright © 2017年 mrarronz. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
@@ -13,22 +14,11 @@
 #import <CocoaAsyncSocket/GCDAsyncUdpSocket.h>
 
 #import "UAServiceModel.h"
-
-/**
- *  连接的设备类型
- */
-typedef NS_ENUM(NSInteger, UADeviceType) {
-    /**
-     * 连接的是AirPlay设备
-     */
-    UADeviceTypeAirplay,
-    /**
-     * 连接的是DLNA的设备
-     */
-    UADeviceTypeDLNA
-};
+#import "UADefineHeader.h"
 
 @interface UAControlDevice : NSObject
+
+@property (nonatomic, strong) GCDAsyncSocket *socket;
 
 // Common
 @property (nonatomic, copy) NSString *deviceName;
@@ -45,5 +35,51 @@ typedef NS_ENUM(NSInteger, UADeviceType) {
 @property (nonatomic, strong) UAServiceModel *avTransport;
 @property (nonatomic, strong) UAServiceModel *renderingControl;
 @property (nonatomic, strong) NSArray *deviceArray;
+
+/**
+ * 获取当前请求的类型
+ */
++ (NSString *)typeWithTag:(long)tag;
+
+/**
+ * 发送内容地址
+ */
+- (void)sendContentWithURL:(NSString *)url;
+
+/**
+ * 发送内容并调整进度，跳转到指定的位置播放
+ * @param progress 0~1之间
+ */
+- (void)sendContentWithURL:(NSString *)url progress:(float)progress;
+
+/**
+ * 发送图片
+ */
+- (void)sendImage:(UIImage *)image;
+
+/**
+ * 发送协商请求
+ */
+- (void)reverse;
+
+/**
+ * 暂停播放
+ */
+- (void)pause;
+
+/**
+ * 继续播放
+ */
+- (void)play;
+
+/**
+ * 停止播放
+ */
+- (void)stop;
+
+/**
+ * 跳转进度
+ */
+- (void)seekToSeconds:(float)seconds;
 
 @end

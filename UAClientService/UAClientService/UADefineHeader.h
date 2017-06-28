@@ -6,9 +6,6 @@
 //  Copyright © 2017年 mrarronz. All rights reserved.
 //
 
-#ifndef UAUPnPHeader_h
-#define UAUPnPHeader_h
-
 static NSString *ssdpAddres = @"239.255.255.250";
 static UInt16    ssdpPort = 1900;
 
@@ -17,4 +14,62 @@ static NSString *serviceRenderingControl    = @"urn:schemas-upnp-org:service:Ren
 
 static NSString *unitTime = @"REL_TIME";
 
-#endif /* UAUPnPHeader_h */
+/**
+ * DLNA指令的控制类型
+ */
+typedef NS_ENUM(NSInteger, UAUPnPServiceType) {
+    /**
+     * 数据传输
+     */
+    UAUPnPServiceTypeAVTransport,
+    /**
+     * 控制control控件
+     */
+    UAUPnPServiceTypeRenderControl
+};
+
+/**
+ *  连接的设备类型
+ */
+typedef NS_ENUM(NSInteger, UADeviceType) {
+    /**
+     * 连接的是AirPlay设备
+     */
+    UADeviceTypeAirplay,
+    /**
+     * 连接的是DLNA的设备
+     */
+    UADeviceTypeDLNA
+};
+
+typedef NS_ENUM(long, UAAirplayActionType) {
+    /**
+     *  发送视频地址
+     */
+    UAAirplayActionMedia = 1,
+    /**
+     *  发送图片
+     */
+    UAAirplayActionImage = 2,
+    /**
+     *  发送协商请求
+     */
+    UAAirplayActionReverse = 3,
+    
+    /**
+     *  发送停止请求
+     */
+    UAAirplayActionStop = 4,
+    /**
+     *  发送暂停请求
+     */
+    UAAirplayActionPause = 5,
+    /**
+     *  发送播放请求
+     */
+    UAAirplayActionPlay = 6,
+    /**
+     *  发送调整进度请求
+     */
+    UAAirplayActionSeek = 7,
+};
