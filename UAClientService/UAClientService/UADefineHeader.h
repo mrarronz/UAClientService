@@ -14,6 +14,9 @@ static NSString *serviceRenderingControl    = @"urn:schemas-upnp-org:service:Ren
 
 static NSString *unitTime = @"REL_TIME";
 
+static NSInteger kTimeoutInterval = 5;
+static NSInteger kDelayTimeInterval = 30;
+
 /**
  * DLNA指令的控制类型
  */
@@ -40,6 +43,24 @@ typedef NS_ENUM(NSInteger, UADeviceType) {
      * 连接的是DLNA的设备
      */
     UADeviceTypeDLNA
+};
+
+/**
+ *  投屏连接方式
+ */
+typedef NS_ENUM(NSInteger, UAConnectionType) {
+    /**
+     * Airplay连接
+     */
+    UAConnectionTypeAirplay,
+    /**
+     * DLNA连接
+     */
+    UAConnectionTypeDLNA,
+    /**
+     * 无连接（当前还没有连接到投屏设备）
+     */
+    UAConnectionTypeNone
 };
 
 typedef NS_ENUM(long, UAAirplayActionType) {
