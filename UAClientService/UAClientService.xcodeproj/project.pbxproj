@@ -10,7 +10,7 @@
 		E2E78AD81F023C8F00D04B50 /* UAClientService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E78ACE1F023C8F00D04B50 /* UAClientService.framework */; };
 		E2E78ADD1F023C8F00D04B50 /* UAClientServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E78ADC1F023C8F00D04B50 /* UAClientServiceTests.m */; };
 		E2E78ADF1F023C8F00D04B50 /* UAClientService.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E78AD11F023C8F00D04B50 /* UAClientService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2E78AF11F024D7100D04B50 /* UAUPnPController.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E78AEF1F024D7100D04B50 /* UAUPnPController.h */; };
+		E2E78AF11F024D7100D04B50 /* UAUPnPController.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E78AEF1F024D7100D04B50 /* UAUPnPController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2E78AF21F024D7100D04B50 /* UAUPnPController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E78AF01F024D7100D04B50 /* UAUPnPController.m */; };
 		E2E78AF61F024E5900D04B50 /* UAServiceModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E78AF41F024E5900D04B50 /* UAServiceModel.h */; };
 		E2E78AF71F024E5900D04B50 /* UAServiceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E78AF51F024E5900D04B50 /* UAServiceModel.m */; };
@@ -21,11 +21,11 @@
 		E2E78B021F024F9700D04B50 /* GDataXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E78B001F024F9700D04B50 /* GDataXMLNode.h */; };
 		E2E78B031F024F9700D04B50 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E78B011F024F9700D04B50 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		E2E78B051F024FE700D04B50 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E78B041F024FE700D04B50 /* libxml2.tbd */; };
-		E2E78B081F034D0800D04B50 /* UAControlDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E78B061F034D0800D04B50 /* UAControlDevice.h */; };
+		E2E78B081F034D0800D04B50 /* UAControlDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E78B061F034D0800D04B50 /* UAControlDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2E78B091F034D0800D04B50 /* UAControlDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E78B071F034D0800D04B50 /* UAControlDevice.m */; };
-		E2E78B0C1F038CB500D04B50 /* UAControlManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E78B0A1F038CB500D04B50 /* UAControlManager.h */; };
+		E2E78B0C1F038CB500D04B50 /* UAControlManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E78B0A1F038CB500D04B50 /* UAControlManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2E78B0D1F038CB500D04B50 /* UAControlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E78B0B1F038CB500D04B50 /* UAControlManager.m */; };
-		E2E78B111F039B2B00D04B50 /* UADefineHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E78B101F039B2B00D04B50 /* UADefineHeader.h */; };
+		E2E78B111F039B2B00D04B50 /* UADefineHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E78B101F039B2B00D04B50 /* UADefineHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E35C1FB19CB8FF8C46DF50DE /* libPods-UAClientService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0543A594D6F2B2695711E0E4 /* libPods-UAClientService.a */; };
 /* End PBXBuildFile section */
 
@@ -183,14 +183,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2E78ADF1F023C8F00D04B50 /* UAClientService.h in Headers */,
-				E2E78AFA1F024E9A00D04B50 /* UAUPnPAction.h in Headers */,
 				E2E78AF11F024D7100D04B50 /* UAUPnPController.h in Headers */,
+				E2E78B111F039B2B00D04B50 /* UADefineHeader.h in Headers */,
+				E2E78B081F034D0800D04B50 /* UAControlDevice.h in Headers */,
+				E2E78B0C1F038CB500D04B50 /* UAControlManager.h in Headers */,
+				E2E78AFA1F024E9A00D04B50 /* UAUPnPAction.h in Headers */,
 				E2E78AFE1F024EC500D04B50 /* UAUPnPInfoModel.h in Headers */,
 				E2E78B021F024F9700D04B50 /* GDataXMLNode.h in Headers */,
-				E2E78B111F039B2B00D04B50 /* UADefineHeader.h in Headers */,
 				E2E78AF61F024E5900D04B50 /* UAServiceModel.h in Headers */,
-				E2E78B0C1F038CB500D04B50 /* UAControlManager.h in Headers */,
-				E2E78B081F034D0800D04B50 /* UAControlDevice.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

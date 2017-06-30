@@ -16,4 +16,7 @@ FOUNDATION_EXPORT const unsigned char UAClientServiceVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <UAClientService/PublicHeader.h>
 
-
+#import "UADefineHeader.h"
+#import "UAControlManager.h"
+#import "UAControlDevice.h"
+#import "UAUPnPController.h"
