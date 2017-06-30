@@ -2,7 +2,7 @@
 Support DLNA and airplay protocol to transfer media content from one device to another like TV, etc.
 
 
-##Airplay
+## Airplay
 
 AirPlay is supported on iOS 4.3 or later and iTunes 10.2 or later on OS X and Windows. AirPlay can enrich your apps and games by allowing users to extend content from an iOS device to a high-definition TV with Apple TV or to an AirPlay-enabled sound system.
 
@@ -13,7 +13,7 @@ There are two ways to use AirPlay, following the apple developer documentation a
 The another way to use AirPlay is to follow the AirPlay protocol, implement all the functions yourself. You can customize the UI all yourself, without using MPVolumeView. Here is an [Unofficial AirPlay Protocol Specification](http://nto.github.io/AirPlay.html) . This document is awesome, with this detailed protocol specification, we can implement AirPlay functions freely.
 
 
-##DLNA
+## DLNA
 
 DLNA(DIGITAL LIVING NETWORK ALLIANCE), is set up by Sony, Intel and Microsoft. It's not a protocol, it's just a solution, a standard rule to extend musics, photos and videos from a device to another. The aim of this alliance is 'enjoy your music, photos and videos, anywhere anytime'. DLNA is based on [SOAP](https://en.wikipedia.org/wiki/SOAP) protocol to transmit data. DLNA is a more popular solution and widely used through devices.
 
@@ -21,4 +21,5 @@ DLNA(DIGITAL LIVING NETWORK ALLIANCE), is set up by Sony, Intel and Microsoft. I
 Goods resources to learn how to implement functions like AirPlay with DLNA:
 
 [基于DLNA实现iOS，Android投屏：SOAP控制设备](http://ios.jobbole.com/84519/)
+
 [基于DLNA实现iOS投屏，SSDP发现设备及SOAP控制设备](https://github.com/ClaudeLi/DLNA_UPnP)
