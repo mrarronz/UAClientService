@@ -58,28 +58,28 @@
     NSString *type;
     switch (tag) {
         case 1:
-            type = @"UAAirplayActionMedia";
+            type = @"UAAirPlayActionMedia";
             break;
         case 2:
-            type = @"UAAirplayActionImage";
+            type = @"UAAirPlayActionImage";
             break;
         case 3:
-            type = @"UAAirplayActionReverse";
+            type = @"UAAirPlayActionReverse";
             break;
         case 4:
-            type = @"UAAirplayActionStop";
+            type = @"UAAirPlayActionStop";
             break;
         case 5:
-            type = @"UAAirplayActionPause";
+            type = @"UAAirPlayActionPause";
             break;
         case 6:
-            type = @"UAAirplayActionPlay";
+            type = @"UAAirPlayActionPlay";
             break;
         case 7:
-            type = @"UAAirplayActionSeek";
+            type = @"UAAirPlayActionSeek";
             break;
         default:
-            type = @"UAAirplayActionMedia";
+            type = @"UAAirPlayActionMedia";
             break;
     }
     return type;
@@ -106,7 +106,7 @@
     NSString *message = [[NSString alloc] initWithFormat:@"POST /play HTTP/1.1\r\n"
                          "Content-Length: %zd\r\n"
                          "User-Agent: MediaControl/1.0\r\n\r\n%@", length, body];
-    [self sendMessage:message action:UAAirplayActionMedia];
+    [self sendMessage:message action:UAAirPlayActionMedia];
 }
 
 /**
@@ -120,7 +120,7 @@
                          "User-Agent: MediaControl/1.0\r\n\r\n", length];
     NSMutableData *messageData = [[NSMutableData alloc] initWithData:[message dataUsingEncoding:NSUTF8StringEncoding]];
     [messageData appendData:imageData];
-    [self sendData:messageData action:UAAirplayActionImage];
+    [self sendData:messageData action:UAAirPlayActionImage];
 }
 
 /**
@@ -134,7 +134,7 @@
     "Content-Length: 0\r\n"
     "User-Agent: MediaControl/1.0\r\n\r\n";
     
-    [self sendMessage:message action:UAAirplayActionReverse];
+    [self sendMessage:message action:UAAirPlayActionReverse];
 }
 
 /**
@@ -145,7 +145,7 @@
     "Content-Length: 0\r\n"
     "User-Agent: MediaControl/1.0\r\n\r\n";
     
-    [self sendMessage:message action:UAAirplayActionPause];
+    [self sendMessage:message action:UAAirPlayActionPause];
 }
 
 /**
@@ -156,7 +156,7 @@
     "Content-Length: 0\r\n"
     "User-Agent: MediaControl/1.0\r\n\r\n";
     
-    [self sendMessage:message action:UAAirplayActionPlay];
+    [self sendMessage:message action:UAAirPlayActionPlay];
 }
 
 /**
@@ -167,7 +167,7 @@
     "Content-Length: 0\r\n"
     "User-Agent: MediaControl/1.0\r\n\r\n";
     
-    [self sendMessage:message action:UAAirplayActionStop];
+    [self sendMessage:message action:UAAirPlayActionStop];
 }
 
 /**
@@ -178,7 +178,7 @@
                          "Content-Length: 0\r\n"
                          "User-Agent: MediaControl/1.0\r\n\r\n", seconds];
     
-    [self sendMessage:message action:UAAirplayActionSeek];
+    [self sendMessage:message action:UAAirPlayActionSeek];
 }
 
 #pragma mark - Private method
@@ -186,7 +186,7 @@
 /**
  * 发送数据，同时记录当前发送的事件
  */
-- (void)sendData:(NSData *)data action:(UAAirplayActionType)action {
+- (void)sendData:(NSData *)data action:(UAAirPlayActionType)action {
     [self.socket writeData:data withTimeout:15 tag:action];
     [self.socket readDataWithTimeout:15 tag:action];
 }
@@ -194,7 +194,7 @@
 /**
  * 将字符消息转为NSData再进行发送
  */
-- (void)sendMessage:(NSString *)message action:(UAAirplayActionType)action {
+- (void)sendMessage:(NSString *)message action:(UAAirPlayActionType)action {
     [self sendData:[message dataUsingEncoding:NSUTF8StringEncoding] action:action];
 }
 

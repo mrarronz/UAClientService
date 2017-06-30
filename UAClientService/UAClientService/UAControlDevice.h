@@ -25,7 +25,7 @@
 @property (nonatomic, copy) NSString *hostName;
 @property (nonatomic, assign) UADeviceType deviceType;
 
-// Airplay
+// AirPlay
 @property (nonatomic, assign) UInt16 port;
 @property (nonatomic, copy) NSString *ip;
 @property (nonatomic, assign) CGFloat imageQuality;

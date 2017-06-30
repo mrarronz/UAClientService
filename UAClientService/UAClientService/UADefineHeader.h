@@ -38,7 +38,7 @@ typedef NS_ENUM(NSInteger, UADeviceType) {
     /**
      * 连接的是AirPlay设备
      */
-    UADeviceTypeAirplay,
+    UADeviceTypeAirPlay,
     /**
      * 连接的是DLNA的设备
      */
@@ -50,9 +50,9 @@ typedef NS_ENUM(NSInteger, UADeviceType) {
  */
 typedef NS_ENUM(NSInteger, UAConnectionType) {
     /**
-     * Airplay连接
+     * AirPlay连接
      */
-    UAConnectionTypeAirplay,
+    UAConnectionTypeAirPlay,
     /**
      * DLNA连接
      */
@@ -63,34 +63,34 @@ typedef NS_ENUM(NSInteger, UAConnectionType) {
     UAConnectionTypeNone
 };
 
-typedef NS_ENUM(long, UAAirplayActionType) {
+typedef NS_ENUM(long, UAAirPlayActionType) {
     /**
      *  发送视频地址
      */
-    UAAirplayActionMedia = 1,
+    UAAirPlayActionMedia = 1,
     /**
      *  发送图片
      */
-    UAAirplayActionImage = 2,
+    UAAirPlayActionImage = 2,
     /**
      *  发送协商请求
      */
-    UAAirplayActionReverse = 3,
+    UAAirPlayActionReverse = 3,
     
     /**
      *  发送停止请求
      */
-    UAAirplayActionStop = 4,
+    UAAirPlayActionStop = 4,
     /**
      *  发送暂停请求
      */
-    UAAirplayActionPause = 5,
+    UAAirPlayActionPause = 5,
     /**
      *  发送播放请求
      */
-    UAAirplayActionPlay = 6,
+    UAAirPlayActionPlay = 6,
     /**
      *  发送调整进度请求
      */
-    UAAirplayActionSeek = 7,
+    UAAirPlayActionSeek = 7,
 };

@@ -65,7 +65,7 @@ UAUPnpControllerDelegate>
     // search DLNA devices
     [self searchDLNA];
     
-    // search airplay
+    // search AirPlay devices
     [self.serviceBrowser searchForServicesOfType:@"_airplay._tcp" inDomain:@"local."];
     [self performSelector:@selector(stopSearching) withObject:nil afterDelay:kDelayTimeInterval];
 }
@@ -111,7 +111,7 @@ UAUPnpControllerDelegate>
 /**
  * 连接AirPlay设备
  */
-- (void)connectAirplayDevice:(UAControlDevice *)device {
+- (void)connectAirPlayDevice:(UAControlDevice *)device {
     
     self.tempDevice = device;
     // 连接AirPlay设备
@@ -120,7 +120,7 @@ UAUPnpControllerDelegate>
     if (error) {
         NSLog(@"连接设备失败: %@, error: %@", device.deviceName, error);
     } else {
-        _connectType = UAConnectionTypeAirplay;
+        _connectType = UAConnectionTypeAirPlay;
     }
 }
 
@@ -141,7 +141,7 @@ UAUPnpControllerDelegate>
     if (!self.connectedDevice) {
         return;
     }
-    if (_connectType == UAConnectionTypeAirplay) {
+    if (_connectType == UAConnectionTypeAirPlay) {
         [self.connectedDevice stop];
         [self.socket disconnect];
         _socket = nil;
@@ -161,7 +161,7 @@ UAUPnpControllerDelegate>
         return;
     }
     if (self.connectedDevice) {
-        if (self.connectType == UAConnectionTypeAirplay) {
+        if (self.connectType == UAConnectionTypeAirPlay) {
             [self.connectedDevice pause];
         } else {
             [self.dlnaController pause];
@@ -178,7 +178,7 @@ UAUPnpControllerDelegate>
         return;
     }
     if (self.connectedDevice) {
-        if (self.connectType == UAConnectionTypeAirplay) {
+        if (self.connectType == UAConnectionTypeAirPlay) {
             [self.connectedDevice play];
         } else {
             [self.dlnaController play];
@@ -208,7 +208,7 @@ UAUPnpControllerDelegate>
     
     UAControlDevice *device = [[UAControlDevice alloc] init];
     device.deviceName = sender.name;
-    device.deviceType = UADeviceTypeAirplay;
+    device.deviceType = UADeviceTypeAirPlay;
     device.hostName = sender.hostName;
     device.port = sender.port;
     
@@ -217,7 +217,7 @@ UAUPnpControllerDelegate>
     }
     // 自动连接第一个搜索到的设备
     if (self.autoConnect && !self.connectedDevice) {
-        [self connectAirplayDevice:device];
+        [self connectAirPlayDevice:device];
     }
 }
 

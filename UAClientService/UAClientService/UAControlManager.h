@@ -19,7 +19,7 @@
 - (void)manager:(UAControlManager *)manager didFindDevice:(UAControlDevice *)device;
 - (void)manager:(UAControlManager *)manager didConnectToDevice:(UAControlDevice *)device;
 - (void)manager:(UAControlManager *)manager didStopSearchingWithServiceCount:(NSInteger)count;
-- (void)manager:(UAControlManager *)manager didCompleteActionWithTag:(UAAirplayActionType)tag;
+- (void)manager:(UAControlManager *)manager didCompleteActionWithTag:(UAAirPlayActionType)tag;
 
 @end
 
@@ -50,7 +50,7 @@
 /**
  * 连接AirPlay设备
  */
-- (void)connectAirplayDevice:(UAControlDevice *)device;
+- (void)connectAirPlayDevice:(UAControlDevice *)device;
 
 /**
  * 连接DLNA设备，连接成功后直接投放视频url
